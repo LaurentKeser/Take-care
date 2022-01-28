@@ -10,6 +10,23 @@
 
 <article layout:fragment="content">
 
+
+    <h2>Liste des pharmacies</h2>
+
+    <div th:if="${#lists.isEmpty(pharmacies)}"> Aucune pharmacie</div>
+
+    <FORM th:unless="${#lists.isEmpty(pharmacies)}" method="post">
+        <SELECT name="nom" size="1">
+
+            <option th:each="pharmacie: ${pharmacies}" th:value="${pharmacie.pharmacy_Name}"
+                    th:text="${pharmacie.pharmacy_Name}"
+
+            ></option>
+            <option selected="selected">choisissez un utilisateur</option>
+
+        </SELECT>
+    </FORM>
+
     <div class="container">
 
         <div class="form-outer">
