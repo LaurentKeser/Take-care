@@ -31,18 +31,4 @@ public class Pharmacies {
 
 }
 
- /*
-    CREATE TABLE `takacaredb`.`pharmacies` (
-      `id` INT NOT NULL,
-      `pharmacyName` VARCHAR(45) NULL,
-      `address` VARCHAR(45) NULL,
-      `email` VARCHAR(45) NULL,
-      `phoneNumber` VARCHAR(45) NULL,
-      `description` VARCHAR(45) NULL,
-      `password` VARCHAR(45) NULL,
-      `url` VARCHAR(45) NULL,
-      `pharmacienTitulaire` VARCHAR(45) NULL,
-      `numeroOrdre` VARCHAR(45) NULL,
-      `numeroAgrement` VARCHAR(45) NULL,
-      PRIMARY KEY (`id`));
-    */
+
